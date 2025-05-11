@@ -18,7 +18,7 @@ function renderAllProducts(products) {
     card.className = "product-card";
   
       card.innerHTML = `
-  <img src="../assets/images/${product.image}" alt="${product.title}">
+  <img src="assets/images/${product.image}" alt="${product.title}">
   <h3>${shortten(product.title , 20)}</h3>
   <p>${shortten(product.description , 20)}</p>
   <p class="price">${product.price.toLocaleString()} تومان</p>
