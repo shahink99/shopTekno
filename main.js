@@ -111,7 +111,7 @@ window.addEventListener("load", () => {
         slide.className = "swiper-slide";
         slide.innerHTML = `
           <div class="product-card">
-            <img src="../assets/images/${product.image}" alt="${product.title}">
+            <img src="assets/images/${product.image}" alt="${product.title}">
             <h3>${shortten(product.title,20)}</h3>
             <p>${product.price.toLocaleString()} تومان</p>
               <div class="card-actions">
@@ -168,7 +168,7 @@ window.addEventListener("load", () => {
         div.className = "offer-card";
         div.innerHTML = `
         
-  <img src="../assets/images/${product.image}" alt="${product.title}">
+  <img src="assets/images/${product.image}" alt="${product.title}">
   <h3>${shortten(product.title,20)}</h3>
   <p>${shortten(product.description , 20)}</p>
   <p>
@@ -215,7 +215,7 @@ window.addEventListener("load", () => {
       card.classList.add("product-card");
 
       card.innerHTML = `
-  <img src="../assets/images/${product.image}" alt="${product.title}">
+  <img src="assets/images/${product.image}" alt="${product.title}">
   <h3>${shortten(product.title , 20)}</h3>
   <p>${shortten(product.description , 20)}</p>
   <p class="price">${product.price.toLocaleString()} تومان</p>
