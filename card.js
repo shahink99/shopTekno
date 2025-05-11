@@ -20,7 +20,7 @@ function renderCart() {
     card.classList.add("cart-card");
 
     card.innerHTML = `
-      <img src="../assets/images/${image}" alt="${title}" class="cart-img" />
+      <img src="assets/images/${image}" alt="${title}" class="cart-img" />
       <div class="cart-details">
         <h3>${title}</h3>
         <p>قیمت: ${price} تومان</p>
@@ -108,5 +108,5 @@ cancelBtn.addEventListener("click", () => {
 
 
 
-  cancelMessage.innerHTML = `<a href='/index.html'>برگشت به فروشگاه</a>`;
+  cancelMessage.innerHTML = `<a href='index.html'>برگشت به فروشگاه</a>`;
 });
