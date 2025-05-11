@@ -19,7 +19,7 @@ import productsData from "./Products.js";
       }
 
       productDetailsContainer.innerHTML = `
-      <img src="../assets/images/${product.image}" alt="${product.title}">
+      <img src="assets/images/${product.image}" alt="${product.title}">
       <div class="product-info">
         <h1>${product.title}</h1>
         <p class="description">${product.description}</p>
@@ -36,9 +36,9 @@ import productsData from "./Products.js";
       const backBtn = document.getElementById("backBtn");
 
       if (from === "home") {
-        backBtn.setAttribute("href", "../index.html");
+        backBtn.setAttribute("href", "index.html");
       } else if (from === "products") {
-        backBtn.setAttribute("href", "../allProduct.html");
+        backBtn.setAttribute("href", "allProduct.html");
       } else {
         backBtn.setAttribute("href", "index.html"); // پیش‌فرض
       }
