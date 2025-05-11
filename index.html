@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه تکنولوژی</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">تکنوشاپ</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">خانه</a></li>
+            <div class="badge-container">
+            <li><a href="card.html">سبد خرید</a></li>
+            <span class="badge-icon"></span>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- اطمینان مشتری -->
+    <section class="trust-section">
+      <div class="container">
+        <p class="trust-message">
+          با اطمینان خرید کنید | ارسال سریع، پرداخت امن، ضمانت کیفیت
+        </p>
+      </div>
+    </section>
+
+    <!-- اسلایدر محصولات پرفروش -->
+    <!-- best-sellers-slider.html -->
+    <section class="best-sellers">
+      <h2 class="section-title">محصولات پرفروش</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- محصولات اینجا قرار می‌گیرند -->
+        </div>
+        <!-- دکمه‌ها -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- نقاط پایین -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- پیشنهاد ویژه -->
+
+    <section class="special-offers">
+      <div class="banner">
+        <h2>پیشنهاد ویژه امروز</h2>
+        <p>محصولات منتخب با تخفیف‌های شگفت‌انگیز فقط برای مدت محدود!</p>
+      </div>
+      <div class="offers-grid" id="special-products"></div>
+    </section>
+
+    <!-- سرویس ها -->
+
+    <section class="services-intro">
+      <h2>چرا فروشگاه ما؟</h2>
+      <p>
+        ما در فروشگاه خود تلاش می‌کنیم تا بهترین تجربه خرید را برای شما فراهم
+        کنیم. از ارسال سریع گرفته تا پشتیبانی همیشه در دسترس و ضمانت بازگشت، همه
+        برای رضایت شما طراحی شده‌اند.
+      </p>
+    </section>
+
+    <section class="services">
+      <div class="service">
+        <i class="fas fa-truck-fast"></i>
+        <h3>ارسال سریع</h3>
+        <p>تحویل سفارش در کمترین زمان ممکن</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-headset"></i>
+        <h3>پشتیبانی ۲۴/۷</h3>
+        <p>پاسخگویی شبانه‌روزی به سوالات شما</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-rotate-left"></i>
+        <h3>ضمانت بازگشت</h3>
+        <p>۷ روز ضمانت بازگشت کالا بدون قید و شرط</p>
+      </div>
+    </section>
+
+    <!-- Category Section -->
+
+  <section class="category-section">
+        <h2 class="section-title">بر اساس دسته بندی </h2>
+  <div class="category-buttons">
+    <button data-category="playStions">پلی استیشن</button>
+    <button data-category="laptop">لپ‌تاپ</button>
+    <button data-category="phone">موبایل</button>
+    <button data-category="watch">ساعت هوشمند</button>
+    <button data-category="tv">تلویزیون</button>
+    <button data-category="headPhone">هدفون</button>
+
+  </div>
+  <div id="category-products" class="product-container"></div>
+</section>
+
+
+   <!-- All Products -->
+
+    <section class="latest-products">
+      <div class="container">
+        <h2 class="section-title">تمامی محصولات </h2>
+        <a href="/allProduct.html" class="show-all">نمایش همه ... </a>
+        <div id="new-products">
+          <!-- اینجا محصولات با JS وارد می‌شن -->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Costomers Comments -->
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">نظر مشتریان</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="name">سارا محمدی</span>
+              <span class="date">۱۴۰۳/۰۱/۱۵</span>
+            </div>
+            <p class="comment-text">
+              سایت خیلی خوبی دارید، تجربه خرید خیلی راحت و عالی بود.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="name">علیرضا جعفری</span>
+              <span class="date">۱۴۰۳/۰۱/۲۰</span>
+            </div>
+            <p class="comment-text">
+              ارسال به‌موقع و قیمت مناسب، ممنون از تیم خوبتون.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="name">مینا قاسمی</span>
+              <span class="date">۱۴۰۳/۰۲/۰۱</span>
+            </div>
+            <p class="comment-text">
+              محصولاتتون خیلی با کیفیتن، حتماً دوباره خرید می‌کنم.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="name">احمد نوروزی</span>
+              <span class="date">۱۴۰۳/۰۲/۰۵</span>
+            </div>
+            <p class="comment-text">
+              پشتیبانی عالی و پاسخگویی سریع. تجربه خوبی داشتم.
+            </p>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <span class="name">زهرا شفیعی</span>
+              <span class="date">۱۴۰۳/۰۲/۱۰</span>
+            </div>
+            <p class="comment-text">
+              بسته‌بندی مرتب و دقیق بود. حتماً به دوستانم توصیه می‌کنم.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>فروشگاه تکنولوژی</h3>
+            <p>بهترین محصولات دیجیتال با قیمت مناسب و کیفیت عالی</p>
+          </div>
+          <div class="footer-links">
+            <h4>دسترسی سریع</h4>
+            <ul>
+              <li><a href="#">خانه</a></li>
+              <li><a href="#">محصولات</a></li>
+              <li><a href="#">درباره ما</a></li>
+              <li><a href="#">تماس با ما</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>تماس با ما</h4>
+            <p>ایمیل: info@techshop.com</p>
+            <p>تلفن: ۰۲۱-۱۲۳۴۵۶۷۸</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>تمامی حقوق محفوظ است © 2025 فروشگاه تکنولوژی</p>
+        </div>
+      </div>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="shortten.js"></script>
+    <script src="showToast.js"></script>
+    <script src="category.js" type="module"></script>
+    <script src="addToBasket.js" type="module"></script>
+    <script src="getCardLength.js"></script>
+    <!-- <script src="js/backBtn.js"></script> -->
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
