@@ -23,7 +23,7 @@ function renderCart() {
       <img src="assets/images/${image}" alt="${title}" class="cart-img" />
       <div class="cart-details">
         <h3>${title}</h3>
-        <p>قیمت: ${price} تومان</p>
+        <p>قیمت: ${price.toLocaleString()} تومان</p>
         <p>تعداد:
           <button class="qty-btn" data-action="decrease" data-index="${index}">-</button>
           ${quantity}
@@ -110,3 +110,4 @@ cancelBtn.addEventListener("click", () => {
 
   cancelMessage.innerHTML = `<a href='index.html'>برگشت به فروشگاه</a>`;
 });
+
