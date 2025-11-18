@@ -410,6 +410,9 @@ header nav a:hover {
    #category-products,
   .offers-grid {
     grid-template-columns: 1fr;
+  },
+    #category-products{
+    grid-template-columns:  1fr;
   }
 }
 
