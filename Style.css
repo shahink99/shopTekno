@@ -292,7 +292,7 @@ header nav a:hover {
 
 .product-container {
   display: grid;
-  /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
   padding: 0 30px;
@@ -397,23 +397,21 @@ header nav a:hover {
 /* ریسپانسیو */
 @media (max-width: 992px) {
   #new-products,
-  .offers-grid {
-    grid-template-columns: repeat(2, 1fr);
-  },
-  #category-products{
+  .offers-grid,
+  .product-container{
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 }
 
 @media (max-width: 576px) {
   #new-products,
    
-  .offers-grid {
+  .offers-grid,
+  .product-container{
     grid-template-columns: 1fr;
-  },
-    #category-products{
-    grid-template-columns:  1fr;
   }
+ 
 }
 
 /* costomers Comments */
