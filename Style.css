@@ -399,7 +399,9 @@ header nav a:hover {
   #new-products,
   .offers-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
+  },
+  #category-products{
+    grid-template-columns: repeat(2, 1fr);
 }
 
 @media (max-width: 576px) {
