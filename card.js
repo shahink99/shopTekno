@@ -12,11 +12,11 @@ function renderCart() {
   let total = 0;
 
   cart.forEach((item, index) => {
-    const { title, price, image, quantity } = item;
+    let { title, price, image, quantity } = item;
 
     total += price * quantity;
 
-    let formattedPrice = new Intl.NumberFormat('fa-IR').format(price);
+    // let formattedPrice = new Intl.NumberFormat('fa-IR').format(price);
 
 
     const card = document.createElement("div");
@@ -26,7 +26,7 @@ function renderCart() {
       <img src="assets/images/${image}" alt="${title}" class="cart-img" />
       <div class="cart-details">
         <h3>${title}</h3>
-        <p>قیمت: ${formattedPrice} تومان</p>
+        <p>قیمت: ${price} تومان</p>
         <p>تعداد:
           <button class="qty-btn" data-action="decrease" data-index="${index}">-</button>
           ${quantity}
@@ -113,5 +113,6 @@ cancelBtn.addEventListener("click", () => {
 
   cancelMessage.innerHTML = `<a href='index.html'>برگشت به فروشگاه</a>`;
 });
+
 
 
